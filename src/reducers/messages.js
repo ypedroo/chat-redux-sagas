@@ -9,7 +9,7 @@ const messages = (state = [], action) => {
             author: action.author,
             id: action.id
         }
-    ] ) 
+    ] )
     default:
         return state;
     }
