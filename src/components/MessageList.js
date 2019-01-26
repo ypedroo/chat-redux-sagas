@@ -1,12 +1,13 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import Message from './Message'
 
 const MessagesList = ({ message }) => (
     <section id="message-list">
         <ul>
             {messages.map(message => (
-                <Messages
+                <Message
                  key={message.id}
                  {...message}
                  />

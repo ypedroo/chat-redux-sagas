@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 import chat from './reducers';
@@ -11,7 +11,7 @@ import chat from './reducers';
 const store = createStore(chat);
 
 ReactDOM.render(
-    <provider store={store}>
+    <Provider store={store}>
     <App />
-    </provider>, document.getElementById('root'));
+    </Provider>, document.getElementById('root'));
 serviceWorker.unregister();
