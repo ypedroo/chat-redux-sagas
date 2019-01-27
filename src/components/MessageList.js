@@ -20,8 +20,8 @@ MessagesList.propTypes = {
   messages: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.number.isRequired,
-                message: propTypes.string.isRequired,
-                author: propTypes.string.isRequired,
+                message: PropTypes.string.isRequired,
+                author: PropTypes.string.isRequired,
             }).isRequired
   ).isRequired
 }
